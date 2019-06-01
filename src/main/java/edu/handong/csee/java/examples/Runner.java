@@ -47,14 +47,18 @@ public class Runner {
 				String[] fileList = file.list();
 				
 				for(int i=0; i<fileList.length; i++) {
+					if(fullpath) {
+						System.out.println(file.getAbsolutePath());
+						//System.out.println(fileList[i].)
+					}
 					System.out.println(fileList[i]);
 				}
 				System.out.println("Your program is terminated. (This message is shown because you turned on -v option!");
 			}
 			
-			if(fullpath) {
+			/*if(fullpath) {
 				System.out.println(file.getAbsolutePath());
-			}
+			}*/
 		}
 	}
 
